@@ -21,23 +21,28 @@ export function paginationOptions(totalPages: number, currentPage: number | unde
   const before = currentPageFixed - 1
   const after = currentPageFixed + 1
 
-  if (currentPageFixed > 1) {
-    if (before > 1) {
-      buttons[1] = '1 ⏪'
-    }
+  //////////////////////////////////
+  // if (currentPageFixed > 1) {
+  //   if (before > 1) {
+  //     buttons[1] = '1 ⏪'
+  //   }
 
-    buttons[before] = `${before} ◀️`
-  }
+  //   buttons[before] = `${before} ◀️`
+  // }
 
-  buttons[currentPageFixed] = String(currentPageFixed)
+  buttons[1] = "<"
+  buttons[2] = `${currentPageFixed}/${totalPagesFixed}`
+  buttons[3] = ">"
+  
+  // buttons[currentPageFixed] = String(currentPageFixed)
 
-  if (currentPageFixed < totalPagesFixed) {
-    buttons[after] = `▶️ ${after}`
+  // if (currentPageFixed < totalPagesFixed) {
+  //   buttons[after] = `▶️ ${after}`
 
-    if (after < totalPagesFixed) {
-      buttons[totalPagesFixed] = `⏩ ${totalPagesFixed}`
-    }
-  }
+  //   if (after < totalPagesFixed) {
+  //     buttons[totalPagesFixed] = `⏩ ${totalPagesFixed}`
+  //   }
+  // }
 
   return buttons
 }
