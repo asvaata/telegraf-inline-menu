@@ -7,6 +7,9 @@
   "engines": {
     "node": ">=10"
   },
+  "scripts": {
+    "build": "npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EdJoPaTo/telegraf-inline-menu.git"
