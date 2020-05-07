@@ -7,14 +7,6 @@
   "engines": {
     "node": ">=10"
   },
-  "scripts": {
-    "build": "del dist && tsc",
-    "prepack": "npm run build",
-    "preexample-js": "npm run build",
-    "example-js": "node examples/main-javascript.js",
-    "start": "ts-node examples/main-typescript.ts",
-    "test": "tsc && xo && nyc ava"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EdJoPaTo/telegraf-inline-menu.git"
