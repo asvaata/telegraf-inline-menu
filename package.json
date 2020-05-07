@@ -8,7 +8,12 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "npm run build"
+    "build": "del dist && tsc",
+    "prepack": "npm run build",
+    "preexample-js": "npm run build",
+    "example-js": "node examples/main-javascript.js",
+    "start": "ts-node examples/main-typescript.ts",
+    "test": "tsc && xo && nyc ava"
   },
   "repository": {
     "type": "git",
