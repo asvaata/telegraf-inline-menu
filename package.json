@@ -1,5 +1,5 @@
 {
-  "name": "telegraf-inline-menu",
+  "name": "telegraf-inline-menu-refork",
   "version": "4.0.0",
   "description": "Inline Menus for Telegraf made simple.",
   "main": "dist/source",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EdJoPaTo/telegraf-inline-menu.git"
+    "url": "git+https://github.com/asvaata/telegraf-inline-menu.git"
   },
   "keywords": [
     "Telegraf",
@@ -25,10 +25,6 @@
   ],
   "author": "Edgar To",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/EdJoPaTo/telegraf-inline-menu/issues"
-  },
-  "homepage": "https://github.com/EdJoPaTo/telegraf-inline-menu#readme",
   "dependencies": {},
   "peerDependencies": {
     "telegraf": "^3.26.0"
